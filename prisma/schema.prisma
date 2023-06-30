@@ -14,10 +14,10 @@ model User{
   id String @id @default(auto()) @map("_id") @db.ObjectId
   name String?
   email String? @unique
-  emailVerified String?
+  emailVerified DateTime?
   image String?
   hashedPassword String?
-  createAt DateTime @default (now()) 
+  createdAt DateTime @default (now()) 
   updatedAt DateTime @updatedAt
   favoriteIds String[] @db.ObjectId
 
@@ -67,7 +67,7 @@ model Reservation {
     userId String @db.ObjectId
     listingId String @db.ObjectId
     startDate DateTime 
-    enddate DateTime
+    endDate DateTime
     totalPrice Int
     createdAt DateTime @default(now())
 
