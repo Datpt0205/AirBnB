@@ -1,4 +1,3 @@
-import { create } from "zustand";
 import { getServerSession } from "next-auth/next";
 
 import { authOptions } from "@/pages/api/auth/[...nextauth]";
@@ -25,9 +24,9 @@ export default async function getCurrentUser() {
     }
     return {
       ...currentUser,
-      createAt: currentUser.createdAt.toISOString(),
-      updateAt: currentUser.updatedAt.toISOString(),
-      emailVerified: currentUser.emailVerified?.toISOString() || null
+      createdAt: currentUser.createdAt.toISOString(),
+      updatedAt: currentUser.updatedAt.toISOString(),
+      emailVerified: currentUser.emailVerified?.toISOString() || null,
     };
   } catch (error: any) {
     return null;
