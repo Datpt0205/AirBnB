@@ -1,7 +1,7 @@
 import ClientOnly from "./components/ClientOnly";
 import RegisterModal from "./components/modals/RegisterModal";
 import Navbar from "./components/navbar/Navbar";
-import "./globals.css";
+import "./styles/globals.css"
 import { Nunito } from "next/font/google";
 import ToasterProviders from "./providers/ToasterProviders";
 import LoginModal from "./components/modals/LoginModal";

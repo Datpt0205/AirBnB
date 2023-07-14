@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
+html,F
 body,
 :root {
   height: 100%;
@@ -15,11 +15,11 @@ body,
   z-index: 0 !important ;
 }
 
-.rdrMonth{
+.rdrMonth {
   width: 100% !important;
 }
 
-.rdrCalenderWrapper{
+.rdrCalendarWrapper {
   width: 100% !important;
   font-size: 16px !important;
 }
